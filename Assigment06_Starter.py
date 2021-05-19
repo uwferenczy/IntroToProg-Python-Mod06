@@ -8,7 +8,9 @@
 # ChangeLog (Who,When,What):
 # RRoot,1.1.2030,Created started script
 # RRoot,1.1.2030,Added code to complete assignment 5
-# DFerenczy,05.07.2021,Modified code to complete assignment 6
+# DFerenczy,05.07.2021,Updated functions in Processor class
+# DFerenczy,05.07.2021,Updated functions in IO class
+# DFerenczy,05.07.2021,Updated main script
 # ---------------------------------------------------------------------------- #
 
 # Data ---------------------------------------------------------------------- #
@@ -160,6 +162,10 @@ class IO:
 
     @staticmethod
     def input_new_task_and_priority():
+        """ Gets a priority and task input from the user
+
+        :return: string
+        """
         global strTask
         global strPriority
         strTask = input("Enter a Task to Add: ")
@@ -168,6 +174,10 @@ class IO:
 
     @staticmethod
     def input_task_to_remove():
+        """ Gets a task input from the user
+
+        :return: string
+        """
         global strTask
         strTask = input("Enter a Task to Remove: ")
         return strTask
